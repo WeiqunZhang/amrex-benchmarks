@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+cd Exec/ABL
+make clean
+make -j16 USE_MPI=TRUE USE_OMP=FALSE USE_CUDA=TRUE TEST=FALSE USE_ASSERTION=FALSE
+
