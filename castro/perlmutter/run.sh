@@ -6,7 +6,7 @@
 #SBATCH -A mp111_g
 #SBATCH -q regular
 #S    BATCH --qos=debug
-#SBATCH -C gpu&hbm40g
+#SBATCH -C gpu&hbm80g
 #SBATCH --exclusive
 #SBATCH --gpu-bind=none
 #SBATCH --ntasks-per-node=4
