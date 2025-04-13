@@ -1,6 +1,6 @@
 #!/bin/bash -l
 
-#SBATCH -J castro
+#SBATCH -J incflo
 #SBATCH -A ast106
 #SBATCH -o %x-%j.out
 #SBATCH -t 00:30:00
