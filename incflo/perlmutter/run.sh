@@ -19,3 +19,5 @@ export MPICH_GPU_SUPPORT_ENABLED=1
 export SLURM_CPU_BIND="cores"
 
 srun -n 32 ./incflo3d.gnu.MPI.CUDA.ex inputs >& output.txt
+
+grep "Time spent in Evolve" output.txt >& result.txt

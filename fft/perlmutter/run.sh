@@ -1,4 +1,5 @@
 #!/bin/bash
+#SBATCH -J fft
 #SBATCH --account=mp111_g
 #SBATCH --nodes=16
 #SBATCH --ntasks-per-node=4

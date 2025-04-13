@@ -19,3 +19,5 @@ export MPICH_GPU_SUPPORT_ENABLED=1
 export SLURM_CPU_BIND="cores"
 
 srun -n 64 ./ERF3d.gnu.TPROF.MPI.CUDA.ex inputs >& output.txt
+
+grep "Total Time:" output.txt >& result.txt

@@ -6,7 +6,7 @@
 #SBATCH -A m4272_g
 #SBATCH -q regular
 #S   BATCH --qos=debug
-#SBATCH -C gpu&hbm80g
+#SBATCH -C gpu&hbm40g
 #SBATCH --exclusive
 #SBATCH --gpu-bind=none
 #SBATCH --ntasks-per-node=4
@@ -19,3 +19,5 @@ export MPICH_GPU_SUPPORT_ENABLED=1
 export SLURM_CPU_BIND="cores"
 
 srun -n 128 ./main3d.gnu.TPROF.MTMPI.CUDA.ex inputs >& output.txt
+
+grep "Total Time" output.txt >& result.txt

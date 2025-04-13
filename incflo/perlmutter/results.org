@@ -1,7 +1,0 @@
-
-$ grep "Time spent in Evolve" output.txt
-
-|       date | amrex      |     incflo |  time |
-|------------+------------+------------+-------|
-| 2025.04.12 | d3540b92d5 | 2e221e1d27 | 11.55 |
-|            |            |            |       |
