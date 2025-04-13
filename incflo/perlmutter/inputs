@@ -1,7 +1,7 @@
 
 max_step                = 12
 
-incflo.cfl              = 0.9           # CFL factor
+incflo.cfl              = 0.1           # CFL factor
 incflo.init_shrink      = 1.0
 
 amr.plot_int            =  -10          # Steps between plot files
