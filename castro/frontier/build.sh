@@ -9,7 +9,7 @@ module load rocm
 
 cd ${test_dir}
 make USE_HIP=TRUE clean
-make -j16 USE_MPI=TRUE USE_OMP=FALSE USE_HIP=TRUE
+make -j16 USE_MPI=TRUE USE_OMP=FALSE USE_HIP=TRUE DISABLE_HIP_INLINE=TRUE
 /bin/mv Castro3d.*.MPI.HIP.ex ${run_dir}
 /bin/cp helm_table.dat ${run_dir}
 make USE_HIP=TRUE clean
