@@ -11,6 +11,9 @@
 #SBATCH --gpu-bind=closest
 #SBATCH -N 16
 
+module load craype-accel-amd-gfx90a
+module load rocm
+
 export MPICH_GPU_SUPPORT_ENABLED=1
 
 srun -n 128 $(ls -tr main3d.*.MTMPI.HIP.ex | tail -n 1) inputs >& output.txt
